@@ -3,8 +3,6 @@ name: protoc-gen-plugin Release
 on:
   release:
     types: [published]
-  push:
-    branches: "*"
 
 jobs:
   release:
