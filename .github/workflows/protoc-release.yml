@@ -6,6 +6,8 @@ on:
 
 jobs:
   release:
+    permissions:
+      contents: write
     name: Release cmd/protoc-gen-plugin
     runs-on: ubuntu-latest
     if: startsWith(github.event.release.tag_name, 'cmd/protoc-gen-plugin/')
